@@ -7,10 +7,11 @@
     "start": "vinxi start",
     "test": "pnpm run test-watch --run",
     "test-watch": "vitest --update",
-    "storybook-build": "storybook build",
+    "build-storybook": "storybook build",
     "storybook": "storybook dev -p 6006 --no-open --disable-telemetry",
     "storybook-dev": "storybook dev -p 6006",
-    "storybook-preview": "serve storybook-static"
+    "storybook-preview": "serve storybook-static",
+    "chromatic": "chromatic"
   },
   "dependencies": {
     "@chromatic-com/storybook": "^4.1.3",
