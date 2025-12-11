@@ -23,9 +23,6 @@ importers:
       '@solidjs/start':
         specifier: ^1.2.0
         version: 1.2.0(@testing-library/jest-dom@6.9.1)(solid-js@1.9.10)(vinxi@0.5.8(@types/node@24.10.2)(db0@0.3.4)(ioredis@5.8.1)(jiti@2.6.1)(terser@5.44.0)(tsx@4.20.6))(vite@7.2.7(@types/node@24.10.2)(jiti@2.6.1)(terser@5.44.0)(tsx@4.20.6))
-      '@storybook/addon-a11y':
-        specifier: ^10.1.6
-        version: 10.1.6(storybook@10.1.6(@testing-library/dom@10.4.1)(react-dom@19.2.1(react@19.2.1))(react@19.2.1))
       '@storybook/addon-docs':
         specifier: ^10.1.6
         version: 10.1.6(@types/react@19.2.3)(esbuild@0.27.1)(rollup@4.52.5)(storybook@10.1.6(@testing-library/dom@10.4.1)(react-dom@19.2.1(react@19.2.1))(react@19.2.1))(vite@7.2.7(@types/node@24.10.2)(jiti@2.6.1)(terser@5.44.0)(tsx@4.20.6))
@@ -65,6 +62,9 @@ importers:
       '@vueless/storybook-dark-mode':
         specifier: ^10.0.4
         version: 10.0.4(storybook@10.1.6(@testing-library/dom@10.4.1)(react-dom@19.2.1(react@19.2.1))(react@19.2.1))
+      chromatic:
+        specifier: ^13.3.4
+        version: 13.3.4
       playwright:
         specifier: '=1.54.1'
         version: 1.54.1
@@ -1293,11 +1293,6 @@ packages:
   '@standard-schema/spec@1.0.0':
     resolution: {integrity: sha512-m2bOd0f2RT9k8QJx1JN85cZYyH1RqFBdlwtkSlf4tBDYLCiiZnv1fIIwacK6cqwXavOydf0NPToMQgpKq+dVlA==}
 
-  '@storybook/addon-a11y@10.1.6':
-    resolution: {integrity: sha512-YTD1u7cS5eg7s5U/zitiWmRvUirZXuB+TJsrRJkoS4tkJxjgDjeWCbSUwoy6pWjKV0ZlpP3Ljv/4EsDq8yIm1g==}
-    peerDependencies:
-      storybook: ^10.1.6
-
   '@storybook/addon-docs@10.1.6':
     resolution: {integrity: sha512-+/hTCxh+qTgAmUKkGGwD3oQ+VKj9Li8TTU0jQl8tcUxX1490fo0q2Eov8dOnfV66cxHxd3RgKaB4KHOaHoj0jQ==}
     peerDependencies:
@@ -1765,10 +1760,6 @@ packages:
 
   async@3.2.6:
     resolution: {integrity: sha512-htCUDlxyyCLMgaM3xXg0C0LW2xqfuQ6p05pCEIsXuyQ+a1koYKTuBMzRNwmybfLgvJDMd0r1LTn4+E0Ti6C2AA==}
-
-  axe-core@4.11.0:
-    resolution: {integrity: sha512-ilYanEU8vxxBexpJd8cWM4ElSQq4QctCLKih0TSfjIfCQTeyH/6zVrmIJfLPrKTKJRbiG+cfnZbQIjAlJmF1jQ==}
-    engines: {node: '>=4'}
 
   b4a@1.7.3:
     resolution: {integrity: sha512-5Q2mfq2WfGuFp3uS//0s6baOJLMoVduPYVeNmDYxu5OUA1/cBfvr2RIS7vi62LdNj/urk1hfmj867I3qt6uZ7Q==}
@@ -4814,12 +4805,6 @@ snapshots:
 
   '@standard-schema/spec@1.0.0': {}
 
-  '@storybook/addon-a11y@10.1.6(storybook@10.1.6(@testing-library/dom@10.4.1)(react-dom@19.2.1(react@19.2.1))(react@19.2.1))':
-    dependencies:
-      '@storybook/global': 5.0.0
-      axe-core: 4.11.0
-      storybook: 10.1.6(@testing-library/dom@10.4.1)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
-
   '@storybook/addon-docs@10.1.6(@types/react@19.2.3)(esbuild@0.27.1)(rollup@4.52.5)(storybook@10.1.6(@testing-library/dom@10.4.1)(react-dom@19.2.1(react@19.2.1))(react@19.2.1))(vite@7.2.7(@types/node@24.10.2)(jiti@2.6.1)(terser@5.44.0)(tsx@4.20.6))':
     dependencies:
       '@mdx-js/react': 3.1.1(@types/react@19.2.3)(react@19.2.1)
@@ -5468,8 +5453,6 @@ snapshots:
   async-sema@3.1.1: {}
 
   async@3.2.6: {}
-
-  axe-core@4.11.0: {}
 
   b4a@1.7.3: {}
 
