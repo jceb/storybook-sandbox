@@ -35,7 +35,7 @@
     "chromatic": "^13.3.4",
     "playwright": "=1.54.1",
     "solid-js": "^1.9.10",
-    "storybook": "^10.1.6",
+    "storybook": "^10.1.10",
     "storybook-solidjs-vite": "^10.0.9",
     "unocss": "^66.5.10",
     "vinxi": "^0.5.8",
